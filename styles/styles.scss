@@ -791,14 +791,21 @@ section {
 
 /*Timeline*/
 .timeline {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
     .timeline-item {
         position: relative;
         padding-left: 3rem;
         border-left: 1px solid var(--color-grey-5);
+        width: 100%;
+        margin-bottom: 2rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
         .tl-icon {
             position: absolute;
             left: -27px;
@@ -846,7 +853,7 @@ section {
     --article-reveal-duration: 400ms;
     --article-reveal-delay: 200ms;
     
-    position: relative;
+        position: relative;
     max-width: 600px;
     margin: 8rem auto 3rem;
     background: linear-gradient(135deg, 
@@ -869,7 +876,7 @@ section {
     &:has(#project-6:checked) .project-6-image {
         opacity: 1;
         transform: scale(1);
-    }
+        }
 
     &:has(#project-1:checked) .project-1-image img,
     &:has(#project-2:checked) .project-2-image img,
@@ -882,7 +889,7 @@ section {
     }
 
     input[type="radio"] {
-        position: absolute;
+            position: absolute;
         width: 1px;
         height: 1px;
         padding: 0;
@@ -897,7 +904,7 @@ section {
 .project-image-display {
     position: absolute;
     top: 0;
-    left: 0;
+            left: 0;
     right: 0;
     width: 100%;
     height: 150px;
@@ -912,11 +919,11 @@ section {
 
 .project-image {
     position: absolute;
-    top: 0;
+            top: 0;
     left: 0;
     width: 100%;
     height: 200%;
-    opacity: 0;
+            opacity: 0;
     transform: scale(0.8);
     transition: all 0.5s ease;
 
@@ -986,15 +993,15 @@ section {
         }
 
         .buttons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             gap: 2rem;
             margin-top: 1rem;
 
             label {
                 font-size: 2rem;
-                cursor: pointer;
+                    cursor: pointer;
                 transition: all 0.3s ease;
                 color: var(--color-secondary);
                 user-select: none;
@@ -1002,7 +1009,7 @@ section {
                 border-radius: 50%;
                 
                 &:hover {
-                    color: var(--color-white);
+                        color: var(--color-white);
                     background: rgba(var(--rgb-secondary), 0.2);
                     transform: scale(1.2);
                 }
@@ -1022,7 +1029,7 @@ section {
                 transition: all 0.3s ease;
                 backdrop-filter: blur(10px);
                 
-                &:hover {
+                    &:hover {
                     background: var(--color-secondary);
                     color: var(--color-dark);
                     transform: translateY(-2px);
@@ -1099,7 +1106,7 @@ section {
     .portfolio-carousel {
         padding: 5rem 1rem 2rem;
         margin: 4rem auto 4rem;
-    }
+}
     .project-image-display {
         height: 125px;
         border-radius: 0 0 250px 250px;
