@@ -1,0 +1,47 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2030"/>
+      <stop offset="1" stop-color="#10161a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9D86FF"/>
+      <stop offset="1" stop-color="#7857FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- faint grid -->
+  <g stroke="#7857FF" stroke-opacity="0.05">
+    <path d="M0 157 H1200 M0 315 H1200 M0 472 H1200"/>
+    <path d="M300 0 V630 M600 0 V630 M900 0 V630"/>
+  </g>
+
+  <!-- left accent bar -->
+  <rect x="0" y="0" width="14" height="630" fill="url(#accent)"/>
+
+  <!-- subtle frame -->
+  <rect x="60" y="60" width="1080" height="510" rx="20" fill="none" stroke="#7857FF" stroke-opacity="0.18"/>
+
+  <!-- terminal dots + url -->
+  <g transform="translate(104, 132)">
+    <circle cx="0" cy="0" r="8" fill="#7857FF"/>
+    <circle cx="26" cy="0" r="8" fill="#7857FF" fill-opacity="0.55"/>
+    <circle cx="52" cy="0" r="8" fill="#7857FF" fill-opacity="0.3"/>
+    <text x="86" y="7" font-family="Menlo, Consolas, monospace" font-size="24" fill="#9D86FF" letter-spacing="1">rencho@tech:~$ therencho.com</text>
+  </g>
+
+  <!-- name -->
+  <text x="100" y="300" font-family="'Helvetica Neue', Arial, sans-serif" font-size="94" font-weight="700" fill="#FFFFFF">Ranchhodbhai Aal</text>
+
+  <!-- role -->
+  <text x="102" y="382" font-family="'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="600" fill="#9D86FF">Data, Science &amp; AI</text>
+
+  <!-- divider -->
+  <rect x="104" y="420" width="84" height="5" rx="2.5" fill="#7857FF"/>
+
+  <!-- description -->
+  <text x="102" y="486" font-family="'Helvetica Neue', Arial, sans-serif" font-size="29" fill="#b2becd">LLM Pipelines · Multi-Agent Systems · Full-Stack Web</text>
+  <text x="102" y="528" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" fill="#6c7983">B.Sc. Data Science &amp; AI · University of Bayreuth, Germany</text>
+</svg>

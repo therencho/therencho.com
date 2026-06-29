@@ -5,6 +5,8 @@
 @media screen and (max-width: 600px) {
     header{
         padding: 0 !important;
+        overflow: visible;
+        height: auto;
     }
     .theme-btn{
         width: 50px;
@@ -34,6 +36,8 @@
     .header-content .left-header .image{
         margin: 0 auto;
         width: 90%;
+        height: 60vh;
+        min-height: 430px;
     }
 
     .controls{
@@ -111,7 +115,8 @@
     }
 
     .contact-item{
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: .3rem;
         margin: 1rem 0;
         p{
             font-size: 15px;
@@ -223,6 +228,10 @@
     .container{
         padding: 7rem 6rem;
     }
+    header{
+        overflow: visible;
+        height: auto;
+    }
     .about-container .left-about{
         padding-right: 0rem;
     }
@@ -238,7 +247,8 @@
         .image{
             width: 90% !important;
             margin: 0 auto !important;
-            
+            height: 62vh !important;
+            min-height: 440px;
         }
     }
     .right-header{

@@ -16,12 +16,16 @@
   <meta property="og:url" content="https://therencho.com" />
   <meta property="og:title" content="Ranchhodbhai Aal — Data, Science &amp; AI" />
   <meta property="og:description" content="B.Sc. Data Science &amp; AI student at University of Bayreuth. Building AI systems, multi-agent platforms, and full-stack web applications." />
-  <meta property="og:image" content="https://therencho.com/img/fevicon.png" />
+  <meta property="og:image" content="https://therencho.com/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Ranchhodbhai Aal — Data, Science &amp; AI · therencho.com" />
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Ranchhodbhai Aal — Data, Science &amp; AI" />
   <meta name="twitter:description" content="B.Sc. Data Science &amp; AI student at University of Bayreuth. Building AI systems, multi-agent platforms, and full-stack web apps." />
+  <meta name="twitter:image" content="https://therencho.com/img/og-image.png" />
 
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,105 +44,32 @@
         <div class="h-shape"></div>
         <div class="image">
           <div class="geometric-pattern">
-            <!-- Main Terminal Header -->
-            <div class="terminal-header"></div>
-
-            <!-- Split Terminal Grid -->
-            <div class="terminal-grid">
-              <!-- Main Command Terminal (Full Width Top) -->
-              <div class="terminal-pane main-terminal">
-                <div class="pane-header">
-                  <span class="pane-title">◉ RENCHO'S COMMAND CENTER</span>
-                  <span class="pane-status">ACTIVE</span>
-                  <span class="system-stats">CPU: 67% | RAM: 4.2GB | GPU: 89%</span>
-                </div>
-                <div class="pane-content">
-                  <div class="terminal-line prompt typing-line" data-delay="0">whoami</div>
-                  <div class="terminal-line typing-line" data-delay="1000">Ranchhodbhai Aal - Data, Science &amp; AI</div>
-                  <div class="terminal-line prompt typing-line" data-delay="2000">ls -la ~/projects/</div>
-                  <div class="terminal-line typing-line" data-delay="2500">total 24</div>
-                  <div class="terminal-line typing-line" data-delay="3000">drwxr-xr-x  8 rencho staff  256 Jun 2026 ./</div>
-                  <div class="terminal-line typing-line" data-delay="3200">-rw-r--r--  1 rencho staff  4096 rus_meeting_assistant.py</div>
-                  <div class="terminal-line typing-line" data-delay="3400">-rw-r--r--  1 rencho staff  3072 project_carola_mcp.py</div>
-                  <div class="terminal-line typing-line" data-delay="3600">-rw-r--r--  1 rencho staff  2048 ai_student_helper.js</div>
-                  <div class="terminal-line typing-line" data-delay="3800">-rw-r--r--  1 rencho staff  1536 vedarktech_platform.ts</div>
-                  <div class="terminal-line prompt typing-line" data-delay="4500">cat system_status.log</div>
-                  <div class="terminal-line status typing-line" data-delay="5000">[2026-06-25 09:14:22] University of Bayreuth — DSAI</div>
-                  <div class="terminal-line status typing-line" data-delay="5200">[2026-06-25 09:14:23] Course Representative loaded</div>
-                  <div class="terminal-line status typing-line" data-delay="5400">[2026-06-25 09:14:24] LLM pipelines online</div>
-                  <div class="terminal-line prompt typing-line" data-delay="6000">./deploy_innovation.sh<span class="cursor"></span></div>
-                </div>
+            <div class="iterm">
+              <div class="iterm-bar">
+                <span class="iterm-dots"><i></i><i></i><i></i></span>
+                <span class="iterm-bar-title">rencho@web — interactive shell</span>
               </div>
-
-              <!-- AI Processing & ML (Bottom Left) -->
-              <div class="terminal-pane ai-processor">
-                <div class="pane-header">
-                  <span class="pane-title">⚡ AI PROCESSING</span>
-                  <span class="pane-status loading">COMPUTING</span>
-                </div>
-                <div class="pane-content">
-                  <div class="terminal-line status typing-line" data-delay="1500">Initializing LLM pipeline...</div>
-                  <div class="terminal-line status typing-line" data-delay="2000">Loading AssemblyAI models...</div>
-                  <div class="loading-section">
-                    <div class="loading-label">Speaker Diarization:</div>
-                    <div class="loading-bar">
-                      <div class="loading-fill"></div>
-                    </div>
-                    <div class="loading-text">Processing segment 847/1000</div>
-                  </div>
-                  <div class="terminal-line status typing-line" data-delay="4000">Accuracy: 94.7%</div>
-                  <div class="terminal-line status typing-line" data-delay="4500">Tasks extracted: 12</div>
-                  <div class="terminal-line status typing-line" data-delay="5500">RUS pipeline complete ✓</div>
-                  <div class="terminal-line system typing-line" data-delay="6500">Next: Multi-agent sync</div>
-                </div>
+              <div class="iterm-body" id="itermBody" aria-live="polite"></div>
+              <div class="iterm-suggest" id="itermSuggest" aria-label="Quick commands">
+                <button type="button" data-cmd="about">about</button>
+                <button type="button" data-cmd="projects">projects</button>
+                <button type="button" data-cmd="skills">skills</button>
+                <button type="button" data-cmd="contact">contact</button>
+                <button type="button" data-cmd="resume">resume</button>
+                <button type="button" data-cmd="help">help</button>
               </div>
-
-              <!-- Network & Security Monitor (Bottom Right) -->
-              <div class="terminal-pane network-activity">
-                <div class="pane-header">
-                  <span class="pane-title">🌐 NETWORK &amp; SECURITY</span>
-                  <span class="pane-status">SECURED</span>
-                </div>
-                <div class="pane-content">
-                  <div class="terminal-line system typing-line" data-delay="1000">Establishing secure connection...</div>
-                  <div class="terminal-line system typing-line" data-delay="1800">Encryption: AES-256 ✓</div>
-                  <div class="network-stats">
-                    <div class="stat-line typing-line" data-delay="2500">↑ Upload: <span class="highlight">2.4 MB/s</span></div>
-                    <div class="stat-line typing-line" data-delay="2700">↓ Download: <span class="highlight">15.7 MB/s</span></div>
-                    <div class="stat-line typing-line" data-delay="2900">⧗ Latency: <span class="highlight">12ms</span></div>
-                    <div class="stat-line typing-line" data-delay="3100">⚡ Packets: <span class="highlight">45,672</span></div>
-                  </div>
-                  <div class="terminal-line system typing-line" data-delay="4000">Firewall: ACTIVE</div>
-                  <div class="terminal-line system typing-line" data-delay="5000">All systems operational</div>
-                  <div class="network-indicator">
-                    <div class="signal-bar"></div>
-                    <div class="signal-bar"></div>
-                    <div class="signal-bar"></div>
-                    <div class="signal-bar"></div>
-                    <div class="signal-bar"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Terminal Footer -->
-            <div class="terminal-footer">
-              <div class="footer-section">
-                <span class="status-indicator online"></span>
-                <span>RENCHO_TECH_SPACE v3.0.1</span>
-              </div>
-              <div class="footer-section">
-                <span>SECURE CONNECTION</span>
-                <span class="encryption">🔐 AES-256</span>
-              </div>
+              <form class="iterm-inputline" id="itermForm" autocomplete="off">
+                <span class="iterm-prompt">$</span>
+                <input id="itermInput" type="text" spellcheck="false" autocomplete="off" aria-label="Type a command" placeholder="type a command, or tap a button…" />
+              </form>
             </div>
           </div>
         </div>
       </div>
       <div class="right-header">
         <h1 class="name">
-          Hi, I'm <span>Ranchhodbhai</span>
-          Data, Science &amp; AI
+          Hi, I'm <span>Rencho</span>
+          a Curious Enthusiast
         </h1>
         <p>
           I'm a Data Science &amp; AI student at the University of Bayreuth, Germany, and Course Representative for the DSAI Bachelor programme. I build production AI systems — from LLM pipelines and multi-agent platforms to full-stack web apps — and I'm passionate about using technology to solve real-world problems.
@@ -147,8 +78,22 @@
           <a href="mailto:me@therencho.com" class="main-btn">
             <span class="btn-text">Connect With Me</span>
             <span class="btn-icon">
-              <i class="fas fa-user-graduate"></i>
+              <i class="fas fa-paper-plane"></i>
             </span>
+          </a>
+          <a href="Rencho_CV.pdf" download class="main-btn">
+            <span class="btn-text">Download CV</span>
+            <span class="btn-icon">
+              <i class="fas fa-download"></i>
+            </span>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/therencho" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/therencho/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
       </div>
@@ -157,7 +102,7 @@
   <main>
     <section class="container about" id="about">
       <div class="main-title">
-        <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+        <h2>About <span>me</span><span class="bg-text">hello</span></h2>
       </div>
       <div class="about-container">
         <div class="left-about">
@@ -175,38 +120,30 @@
         <div class="right-about">
           <div class="about-item">
             <div class="abt-text">
-              <p class="large-text">6+</p>
-              <p class="small-text">
-                Years of <br />
-                Experience
-              </p>
+              <i class="fas fa-graduation-cap abt-icon"></i>
+              <p class="abt-label">Currently</p>
+              <p class="abt-value">B.Sc. Data, Science &amp; AI</p>
             </div>
           </div>
           <div class="about-item">
             <div class="abt-text">
-              <p class="large-text">10+</p>
-              <p class="small-text">
-                Projects <br />
-                Shipped
-              </p>
+              <i class="fas fa-map-marker-alt abt-icon"></i>
+              <p class="abt-label">Based in</p>
+              <p class="abt-value">Bayreuth, Germany</p>
             </div>
           </div>
           <div class="about-item">
             <div class="abt-text">
-              <p class="large-text">400+</p>
-              <p class="small-text">
-                Students <br />
-                Taught
-              </p>
+              <i class="fas fa-language abt-icon"></i>
+              <p class="abt-label">Speaks</p>
+              <p class="abt-value">Gujarati, Hindi, English &amp; German</p>
             </div>
           </div>
           <div class="about-item">
             <div class="abt-text">
-              <p class="large-text">4</p>
-              <p class="small-text">
-                Languages <br />
-                Spoken
-              </p>
+              <i class="fas fa-seedling abt-icon"></i>
+              <p class="abt-label">Tinkering since</p>
+              <p class="abt-value">Age 16 — rooted my first tablet</p>
             </div>
           </div>
         </div>
@@ -215,56 +152,56 @@
         <h4 class="stat-title">My Skills</h4>
         <div class="progress-bars">
           <div class="progress-bar">
-            <p class="prog-title">Web Development</p>
+            <p class="prog-title">Python &amp; FastAPI</p>
+            <div class="progress-con">
+              <p class="prog-text">88%</p>
+              <div class="progress">
+                <span style="width: 88%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">AI · LLMs &amp; MCP</p>
             <div class="progress-con">
               <p class="prog-text">85%</p>
               <div class="progress">
-                <span class="html"></span>
-              </div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <p class="prog-title">Mathematics &amp; Physics</p>
-            <div class="progress-con">
-              <p class="prog-text">95%</p>
-              <div class="progress">
-                <span class="css"></span>
-              </div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <p class="prog-title">Python &amp; TypeScript</p>
-            <div class="progress-con">
-              <p class="prog-text">80%</p>
-              <div class="progress">
-                <span class="js"></span>
-              </div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <p class="prog-title">Graphic Design</p>
-            <div class="progress-con">
-              <p class="prog-text">85%</p>
-              <div class="progress">
-                <span class="react"></span>
+                <span style="width: 85%"></span>
               </div>
             </div>
           </div>
           <div class="progress-bar">
             <p class="prog-title">React.js &amp; Next.js</p>
             <div class="progress-con">
-              <p class="prog-text">82%</p>
+              <p class="prog-text">85%</p>
               <div class="progress">
-                <span class="node"></span>
+                <span style="width: 85%"></span>
               </div>
             </div>
           </div>
           <div class="progress-bar">
-            <p class="prog-title">AI/ML &amp; LLM Engineering</p>
+            <p class="prog-title">SQL &amp; Databases</p>
             <div class="progress-con">
-              <p class="prog-text">78%</p>
+              <p class="prog-text">80%</p>
               <div class="progress">
-                <span class="python"></span>
+                <span style="width: 80%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">Mathematics &amp; Physics</p>
+            <div class="progress-con">
+              <p class="prog-text">90%</p>
+              <div class="progress">
+                <span style="width: 90%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">UI &amp; Graphic Design</p>
+            <div class="progress-con">
+              <p class="prog-text">82%</p>
+              <div class="progress">
+                <span style="width: 82%"></span>
               </div>
             </div>
           </div>
@@ -342,126 +279,142 @@
         Here is some of my work across AI systems, web platforms, and full-stack applications.
       </p>
 
-      <div class="portfolio-carousel">
-        <input type="radio" name="project" id="project-1" checked>
-        <input type="radio" name="project" id="project-2">
-        <input type="radio" name="project" id="project-3">
-        <input type="radio" name="project" id="project-4">
-        <input type="radio" name="project" id="project-5">
-        <input type="radio" name="project" id="project-6">
-
-        <div class="project-image-display">
-          <div class="project-image project-1-image">
-            <img src="img/Cognitive.webp" alt="RUS — AI Meeting Assistant" loading="lazy">
-          </div>
-          <div class="project-image project-2-image">
-            <img src="img/GO.webp" alt="Project Carola — Multi-Agent MCP Server" loading="lazy">
-          </div>
-          <div class="project-image project-3-image">
-            <img src="img/Student.webp" alt="AI Helper For Students" loading="lazy">
-          </div>
-          <div class="project-image project-4-image">
-            <img src="img/Vedark.webp" alt="Vedarktech.com" loading="lazy">
-          </div>
-          <div class="project-image project-5-image">
-            <img src="img/Satva.webp" alt="Satva Institute" loading="lazy">
-          </div>
-          <div class="project-image project-6-image">
-            <img src="img/Premium.webp" alt="Earlier Web Projects" loading="lazy">
-          </div>
-        </div>
-
-        <div class="contents">
-          <!-- Project 1 -->
-          <article>
-            <h2>RUS — AI Meeting Assistant</h2>
-            <ul>
-              <li><span>Technology:</span> FastAPI, Next.js, PostgreSQL, AssemblyAI, Clerk</li>
-              <li><span>Type:</span> Production AI Application</li>
-              <li><span>Features:</span> Records, transcribes &amp; analyses meetings with speaker diarization. Extracts tasks, risks, and summaries via parallel LLM pipelines.</li>
-            </ul>
-            <div class="buttons">
-              <label for="project-6" title="Earlier Web Projects">‹</label>
-              <a href="https://rus.therencho.com" target="_blank" rel="noopener noreferrer" class="view-live">View Live</a>
-              <label for="project-2" title="Project Carola">›</label>
+      <div class="projects-grid">
+        <!-- RUS -->
+        <article class="project-card">
+          <div class="card-top">
+            <div class="card-icon"><i class="fas fa-headset"></i></div>
+            <div class="card-meta">
+              <span class="card-type">Production AI App</span>
+              <span class="card-date">Nov 2024 – Present</span>
             </div>
-          </article>
+          </div>
+          <h3>RUS — AI Meeting Assistant</h3>
+          <p class="card-desc">
+            Records, transcribes &amp; analyses meetings with speaker diarization, then extracts tasks, risks, gaps, intents and summaries in parallel through LLM pipelines. Built on a three-repo architecture with subdomain routing.
+          </p>
+          <div class="card-tech">
+            <span>FastAPI</span><span>Next.js</span><span>PostgreSQL</span><span>AssemblyAI</span><span>Clerk</span><span>Railway</span>
+          </div>
+          <div class="card-foot">
+            <a href="https://rus.therencho.com" target="_blank" rel="noopener noreferrer" class="card-link">
+              View Live <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
 
-          <!-- Project 2 -->
-          <article>
-            <h2>Project Carola</h2>
-            <ul>
-              <li><span>Technology:</span> FastMCP, FastAPI, Next.js, SQLite</li>
-              <li><span>Type:</span> Multi-Agent MCP Server</li>
-              <li><span>Features:</span> Locally hosted AI infrastructure for shared memory and multi-agent orchestration. Dual SQLite stores with persistent memory across sessions.</li>
-            </ul>
-            <div class="buttons">
-              <label for="project-1" title="RUS — AI Meeting Assistant">‹</label>
-              <a href="https://therencho.com" target="_blank" rel="noopener noreferrer" class="view-live">Personal Project</a>
-              <label for="project-3" title="AI Helper For Students">›</label>
+        <!-- Project Carola -->
+        <article class="project-card">
+          <div class="card-top">
+            <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="card-meta">
+              <span class="card-type">Multi-Agent MCP Server</span>
+              <span class="card-date">Jan 2025 – Present</span>
             </div>
-          </article>
+          </div>
+          <h3>Project Carola</h3>
+          <p class="card-desc">
+            Locally hosted AI infrastructure for shared memory and multi-agent orchestration — a FastMCP backend over stdio, a read-only FastAPI layer and a Next.js dashboard, with dual SQLite stores for persistent memory across sessions.
+          </p>
+          <div class="card-tech">
+            <span>FastMCP</span><span>FastAPI</span><span>Next.js</span><span>SQLite</span>
+          </div>
+          <div class="card-foot">
+            <span class="card-private"><i class="fas fa-lock"></i> Self-hosted · Private</span>
+          </div>
+        </article>
 
-          <!-- Project 3 -->
-          <article>
-            <h2>AI Helper For Students</h2>
-            <ul>
-              <li><span>Technology:</span> Next.js, FastAPI, Supabase, Claude, GPT-4o, Whisper</li>
-              <li><span>Type:</span> Educational AI Platform</li>
-              <li><span>Features:</span> Students interact with AI agents to enhance learning efficiency. Personalised tutoring with voice input support.</li>
-            </ul>
-            <div class="buttons">
-              <label for="project-2" title="Project Carola">‹</label>
-              <a href="https://si.therencho.com/" target="_blank" rel="noopener noreferrer" class="view-live">View Live</a>
-              <label for="project-4" title="Vedarktech.com">›</label>
+        <!-- AI Helper for Students -->
+        <article class="project-card">
+          <div class="card-top">
+            <div class="card-icon"><i class="fas fa-robot"></i></div>
+            <div class="card-meta">
+              <span class="card-type">Educational AI Platform</span>
+              <span class="card-date">Jun 2024 – Present</span>
             </div>
-          </article>
+          </div>
+          <h3>AI Helper for Students</h3>
+          <p class="card-desc">
+            A platform where students interact with AI agents to enhance learning efficiency, with personalised tutoring backed by Claude and GPT-4o.
+          </p>
+          <div class="card-tech">
+            <span>Next.js</span><span>FastAPI</span><span>Supabase</span><span>Claude</span><span>GPT-4o</span>
+          </div>
+          <div class="card-foot">
+            <a href="https://si.therencho.com/" target="_blank" rel="noopener noreferrer" class="card-link">
+              View Live <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
 
-          <!-- Project 4 -->
-          <article>
-            <h2>Vedarktech.com</h2>
-            <ul>
-              <li><span>Technology:</span> React.js, Shadcn, TypeScript, Vercel</li>
-              <li><span>Type:</span> Corporate Website</li>
-              <li><span>Features:</span> Modern design with service showcase. Responsive layout with clean component architecture.</li>
-            </ul>
-            <div class="buttons">
-              <label for="project-3" title="AI Helper For Students">‹</label>
-              <a href="https://www.vedarktech.com/" target="_blank" rel="noopener noreferrer" class="view-live">View Live</a>
-              <label for="project-5" title="Satva Institute">›</label>
+        <!-- Vedarktech -->
+        <article class="project-card">
+          <div class="card-top">
+            <div class="card-icon"><i class="fas fa-building"></i></div>
+            <div class="card-meta">
+              <span class="card-type">Corporate Website</span>
+              <span class="card-date">2024</span>
             </div>
-          </article>
+          </div>
+          <h3>Vedarktech.com</h3>
+          <p class="card-desc">
+            A modern, responsive corporate site with a clean service showcase and a well-structured component architecture.
+          </p>
+          <div class="card-tech">
+            <span>React</span><span>TypeScript</span><span>Shadcn</span><span>Vercel</span>
+          </div>
+          <div class="card-foot">
+            <a href="https://www.vedarktech.com/" target="_blank" rel="noopener noreferrer" class="card-link">
+              View Live <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
 
-          <!-- Project 5 -->
-          <article>
-            <h2>Satva Institute</h2>
-            <ul>
-              <li><span>Technology:</span> React.js, EmailJS, Git Version Control</li>
-              <li><span>Type:</span> Educational Platform</li>
-              <li><span>Features:</span> Modern UI with course catalogue. Responsive design with integrated contact system.</li>
-            </ul>
-            <div class="buttons">
-              <label for="project-4" title="Vedarktech.com">‹</label>
-              <a href="https://satvainstitute.com/" target="_blank" rel="noopener noreferrer" class="view-live">View Live</a>
-              <label for="project-6" title="Earlier Web Projects">›</label>
+        <!-- Satva Institute -->
+        <article class="project-card">
+          <div class="card-top">
+            <div class="card-icon"><i class="fas fa-school"></i></div>
+            <div class="card-meta">
+              <span class="card-type">Education Platform</span>
+              <span class="card-date">2022</span>
             </div>
-          </article>
+          </div>
+          <h3>Satva Institute</h3>
+          <p class="card-desc">
+            A clean education platform with a course catalogue and an integrated contact system, built with a responsive, modern UI.
+          </p>
+          <div class="card-tech">
+            <span>React</span><span>EmailJS</span><span>Git</span>
+          </div>
+          <div class="card-foot">
+            <a href="https://satvainstitute.com/" target="_blank" rel="noopener noreferrer" class="card-link">
+              View Live <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
 
-          <!-- Project 6 -->
-          <article>
-            <h2>Earlier Web Projects</h2>
-            <ul>
-              <li><span>Technology:</span> Next.js, React, Tailwind CSS, Framer Motion, Vercel</li>
-              <li><span>Type:</span> Freelance / Personal (2020–2024)</li>
-              <li><span>Features:</span> Responsive frontends for Premium Infotech, GoFirst Tech, Divyesh Exports &amp; others. First website built at 16 after rooting first Android tablet.</li>
-            </ul>
-            <div class="buttons">
-              <label for="project-5" title="Satva Institute">‹</label>
-              <a href="https://premiuminfotechs.com" target="_blank" rel="noopener noreferrer" class="view-live">View Live</a>
-              <label for="project-1" title="RUS — AI Meeting Assistant">›</label>
+        <!-- Earlier Web Projects -->
+        <article class="project-card">
+          <div class="card-top">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <div class="card-meta">
+              <span class="card-type">Freelance / Personal</span>
+              <span class="card-date">2020 – 2024</span>
             </div>
-          </article>
-        </div>
+          </div>
+          <h3>Earlier Web Projects</h3>
+          <p class="card-desc">
+            Responsive frontends for Premium Infotech, GoFirst Tech, Divyesh Exports and others — including the very first website I built at 16 after rooting my first Android tablet.
+          </p>
+          <div class="card-tech">
+            <span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>Framer Motion</span>
+          </div>
+          <div class="card-foot">
+            <a href="https://premiuminfotechs.com" target="_blank" rel="noopener noreferrer" class="card-link">
+              View Live <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -482,7 +435,7 @@
                   <i class="fas fa-map-marker-alt"></i>
                   <span>Location</span>
                 </div>
-                <p>: Bayreuth, Germany</p>
+                <p>Bayreuth, Germany</p>
               </div>
               <div class="contact-item">
                 <div class="icon">
@@ -490,7 +443,7 @@
                   <span>Email</span>
                 </div>
                 <p>
-                  <a href="mailto:me@therencho.com"><span>: me@therencho.com</span></a>
+                  <a href="mailto:me@therencho.com">me@therencho.com</a>
                 </p>
               </div>
               <div class="contact-item">
@@ -498,28 +451,21 @@
                   <i class="fas fa-phone"></i>
                   <span>Phone</span>
                 </div>
-                <p>
-                  <span>: +49 155 633 26663</span>
-                </p>
+                <p>+49 155 633 26663</p>
               </div>
               <div class="contact-item">
                 <div class="icon">
                   <i class="fas fa-globe-africa"></i>
                   <span>Languages</span>
                 </div>
-                <p>
-                  <span>: Gujarati, Hindi, English (C1/C2), German (B1.1)</span>
-                </p>
+                <p>Gujarati, Hindi, English (C1/C2), German (B1.1)</p>
               </div>
             </div>
             <div class="contact-icons">
-              <a href="mailto:me@therencho.com" title="Email">
-                <i class="fas fa-envelope"></i>
-              </a>
-              <a href="https://github.com/therencho" target="_blank" rel="noopener noreferrer" title="GitHub">
+              <a href="https://github.com/therencho" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="https://linkedin.com/in/therencho" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <a href="https://www.linkedin.com/in/therencho/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
